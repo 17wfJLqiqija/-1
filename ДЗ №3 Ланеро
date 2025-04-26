@@ -1,0 +1,30 @@
+public class Main {
+  public static void trueLeap() {
+    System.out.println("В " + x + "году будет 366 дней");
+  }
+  public static void noLeap() {
+    System.out.println("В " + x + "году будет 365 дней");
+  }
+  public static void main(String[] args) {
+    int x = main.nextInt()
+    System.out.println("Введите год: " + x);
+    if (x % 100 != 0 && x % 4 == 0) {
+      System.out.println(trueLeap);
+    } else if (x % 100 != 0 && x % 4 != 0) {
+      System.out.println(noLeap);
+    } else if (x % 100 == 0 && x % 400 == 0) {
+      System.out.println(trueLeap);
+    } else if (x % 100 == 0 && x % 400 != 0) {
+      System.out.println(noLeap);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
