@@ -7,8 +7,10 @@ public class Main {
   }
   public static void main(String[] args) {
     int x = main.nextInt()
-    System.out.println("Введите год: " + x);
-    if (x % 100 != 0 && x % 4 == 0) {
+    System.out.println("Введите год (yyyy): " + x);
+    if (x < 1000) {
+      System.out.println("Ошибка");    
+    } else if (x % 100 != 0 && x % 4 == 0) {
       System.out.println(trueLeap);
     } else if (x % 100 != 0 && x % 4 != 0) {
       System.out.println(noLeap);
