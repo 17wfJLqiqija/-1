@@ -1,3 +1,21 @@
 public class Main {
   public static void main(String[] args){
-    
+    int in = nextInt_in();
+    System.out.println("Доходы: " + nextInt_in);
+    int out = nextInt_out();
+    System.out.println("Расходы: " + nextInt_out);
+  }
+  public static void calcTax1(in){
+    int tax1 = 0.06 * in;
+  }
+  public static void calcTax2(in, out){
+    int tax2 = 0.15 * (in - out);
+  }
+  public static int(bestTax){
+    if (tax1 > tax2){
+      System.out.println("УСН доходы");
+    } else if (tax1 < tax2){
+      System.out.println("УСН доходы минус расходы");
+    }
+  }
+}
