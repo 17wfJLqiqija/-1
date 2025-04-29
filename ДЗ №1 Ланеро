@@ -2,9 +2,10 @@ public class Main {
   public static void (String[] args){
     System.out.println("Manuel Lanero");
   }
-  public static void rest(int income, int spending){
+  public static void rest(income, spending){
+    income = 44000; 
+    spending = 30000;
     int rest = int income - int spending;
     System.out.println("Итого (руб.): " + rest);
   }
-  income = 44000; spending = 30000;
 }
